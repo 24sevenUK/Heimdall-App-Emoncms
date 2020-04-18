@@ -1,0 +1,10 @@
+{
+    "appid": "edfe4b7bb58587e16f5b42fe11e4d771763ba2ba",
+    "name": "Emoncms",
+    "website": "https://emoncms.org/",
+    "license": "GNU Affero General Public License v3.0 only",
+    "description": "Emoncms is a powerful open-source web-app for processing, logging and visualising energy, temperature and other environmental data.",
+    "enhanced": true,
+    "tile_background": "light",
+    "icon": "emoncms.png"
+}

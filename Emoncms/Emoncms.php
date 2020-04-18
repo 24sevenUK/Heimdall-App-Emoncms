@@ -28,16 +28,16 @@ class Emoncms extends \App\SupportedApps implements \App\EnhancedApps {
 		
         if($power_raw || $batt_raw) {
             $data['power'] = $power_raw.' W';
-			$data['batt'] = number_format($batt_raw, 2, '.', '').' V';
+            $data['batt'] = number_format($batt_raw, 2, '.', '').' V';
         }
 		
         return parent::getLiveStats($status, $data);
         
     }
-    public function url($endpoint)
+    public function url($id)
     {
         $apikey = $this->config->apikey;
-		$api_url = parent::normaliseurl($this->config->url).'feed/value.json?id='.$endpoint.'&apikey='.$apikey;
+		$api_url = parent::normaliseurl($this->config->url).'feed/value.json?id='.$id.'&apikey='.$apikey;
         return $api_url;
     }
 }
